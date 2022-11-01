@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Shopping list app</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">My shopping list</div>
+      <div class="header-list-title"></div>
+    </header>
+
+    <nav>
+      <div class="navbar-button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+
+
+      <div class="navbar-user">User1</div>
+
+      <div class="lists-container">
+        <div class="item-func-button del-list">
+          <img src="svg/delete-icon.svg" alt="delete-icon" width="25px"  />
+        </div>
+        <div class="navbar-list">LIST 1</div>
+        <div class="item-func-button rename-list">
+          <img src="svg/edit-pen-icon.svg" alt="rename icon" width="25px"/>
+        </div>
+      </div>
+
+      <div class="item-func-button add-new-list">
+        <img
+          src="svg/add-categories-icon.svg"
+          alt="add-categories-icon"
+          width="25px"
+        />
+      </div>
+    </nav>
+
+    <main>
+      <section class="input-container">
+        <input class="inputItem" type="text" name="item-name" placeholder="your item"/>
+        <input class="inputAmount" type="number" name="item-quantity" min="0" placeholder="amount"/>
+
+        <select name="unit" class="units">
+          <option value="none" selected hidden disabled >--Select--</option>
+          <option value="pc.">piece</option>
+          <option value="g.">gram</option>
+          <option value="kg.">kilogram</option>
+          <option value="l.">liter</option>
+          <option value="ml.">milliliter</option>
+        </select>
+
+        <button class="add-button">
+          <img src="./svg/shoppingcart-add.svg" alt="plus-icon" width="25px" />
+        </button>
+      </section>
+
+      <div class="list"></div>
+
+
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

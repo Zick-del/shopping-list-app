@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: #5392ff;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  position: relative;
+  color: #fcf8e8;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15vw;
+  height: 90vh;
+  background-color: #e29a9a;
+}
+
+.hide {
+  left: -15vw;
+}
+
+.navbar-button {
+  position: absolute;
+  left: 15vw;
+  width: 40px;
+  height: 40px;
+  background-color: #e29a9a;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+}
+
+.navbar-button:hover {
+  cursor: pointer;
+  background-color: #b2a6be;
+
+  transition: all 0.4s linear;
+}
+
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 2px;
+  background-color: #fee6e3;
+}
+
+nav .navbar-user {
+  margin: 20px;
+}
+
+nav .lists-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+  width: 15vw;
+}
+.item-func-button {
+  cursor: pointer;
+  width: 1.5vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  float: right;
+  width: 85vw;
+  position: relative;
+}
+
+main .input-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+  width: 35vw;
+  height: 35px;
+}
+
+.input-container button {
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 5vw;
+}
+
+.input-container button:active {
+  background-color: #b2a6be;
+  outline: 0;
+}
+
+input,
+select {
+  outline: none;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  width: 15vw;
+  background: none;
+  border: 3px solid #b2a6be;
+  border-radius: 10px;
+}
+
+select,
+input[type="number"] {
+  width: 7vw;
+}
+
+input:focus,
+select:focus {
+  border: 3px solid #555;
+}
+
+main .list {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid #b2a6be;
+  margin: 50px auto;
+  width: 40vw;
+  background-color: #fcf8e8;
+}
+
+.bought {
+  background-color: #d5f5e3;
+}
+.list .listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #b2a6be;
+  width: 40vw;
+  height: 35px;
+
+  /* border-radius: 15px; */
+}
+
+.list button {
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.list input {
+  width: 25px;
+  height: 25px;
+}
